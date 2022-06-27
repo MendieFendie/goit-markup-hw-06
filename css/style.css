@@ -705,16 +705,15 @@ body {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--white-color);
+  background-color: var(--additional-text-color);
   cursor: pointer;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover .close-icon,
-.modal-close-button:focus .close-icon {
+.modal-close-button:hover,
+.modal-close-button:focus {
   fill: var(--accent-color);
 }
 
@@ -746,6 +745,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+  color: var(--text-color);
 }
 
 .modal-input {
@@ -813,6 +813,7 @@ body {
   margin-bottom: 30px;
   justify-content: center;
   text-align: center;
+  color: var(--text-color);
 }
 
 .privacy-text {
@@ -857,6 +858,16 @@ body {
   border: 2px solid var(--accent-color);
 }
 
+.modal-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
 .modal-button {
   display: flex;
   padding: 10px 55px;
@@ -869,13 +880,12 @@ body {
   justify-content: center;
   align-items: center;
   letter-spacing: 0.06em;
-  color: var(--white-color);
+  color: var(--additional-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
